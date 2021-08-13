@@ -1,8 +1,34 @@
 <!DOCTYPE html>
 <head>
     <title>The Collection</title>
+    <meta charset="utf-8">
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+    <link href="./styles/keyrune.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/mana.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body style="overflow-y: scroll">
+    <script src='https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js'></script>
 
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAc5EJGTpZyS5waD_Z-PyKOeiuColvA5xQ",
+            authDomain: "collection-e9bf6.firebaseapp.com",
+            databaseURL: "https://collection-e9bf6-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "collection-e9bf6",
+            storageBucket: "collection-e9bf6.appspot.com",
+            messagingSenderId: "1068483887821",
+            appId: "1:1068483887821:web:0a1bac193695b4fca81f84",
+            measurementId: "G-RQLK3KH8Z9"
+        };
+    
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script type="module" src='./scripts/App.js'></script>
+    
 </body>
 </html>
