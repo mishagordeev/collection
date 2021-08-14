@@ -9,6 +9,9 @@ export class View {
     }
 
     init() {
+        console.log(window.screen)
+
+
         const header = document.createElement("div")
         header.classList.add("header")
         document.body.appendChild(header)
@@ -136,6 +139,11 @@ export class View {
         
         const cards = document.createElement("div")
         cards.classList.add("cards")
+        let test = Math.floor(window.innerWidth / 270)
+        console.log(test)
+        let test2 = 275 * test
+        console.log(test2)
+        cards.style.width = test2 + "px"
         cards.id = "cards"
         document.body.appendChild(cards)
     }
